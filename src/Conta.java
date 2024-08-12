@@ -1,3 +1,4 @@
+import java.util.List;
 
 public abstract class Conta implements IConta {
 	
@@ -8,7 +9,7 @@ public abstract class Conta implements IConta {
 	protected int numero;
 	protected double saldo;
 	protected Cliente cliente;
-
+	
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++;
